@@ -23,7 +23,7 @@ import kotlinx.coroutines.flow.first
 import org.koin.core.component.inject
 
 class PeopleInSpaceWidget : BaseGlanceAppWidget<PeopleInSpaceWidget.Data>() {
-    val repository: PeopleInSpaceRepositoryInterface by inject()
+    private val repository: PeopleInSpaceRepositoryInterface by inject()
 
     data class Data(val people: List<Assignment>)
 
